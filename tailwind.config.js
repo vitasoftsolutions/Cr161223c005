@@ -25,7 +25,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        erp_primary: "#007BFF",
+        erp_primary: "#18BCC9",
         erp_secondary: "#6C757D",
         erp_success: "#28A745",
         erp_danger: "#DC3545",
@@ -36,11 +36,11 @@ export default {
         // Others
         erp_bg_main: "#EDE4D9",
         erp_blue: "blue",
-        erp_menu: "#F8F9FA",
-        erp_menu_icons: "#007BFF",
-        erp_menu_text: "#343A40",
-        erp_submenu_icons: "#007BFF",
-        erp_submenu_text: "#343A40",
+        erp_menu: "#18BCC9",
+        erp_menu_icons: "#F3FCFC",
+        erp_menu_text: "#F3FCFC",
+        erp_submenu_icons: "#F3FCFC",
+        erp_submenu_text: "#F3FCFC",
 
       },
     },
