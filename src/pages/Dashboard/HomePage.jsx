@@ -19,8 +19,8 @@ const top_cards = [
     number: "123.40",
     footer_icons: <FaRegBookmark />,
     footer_text: "All erp users",
-    bg1: "#DB8282",
-    bg2: "#DDB249",
+    bg1: "#A43BAB",
+    bg2: "#9A84D9",
   },
   {
     icons: <GiArcheryTarget />,
@@ -28,8 +28,8 @@ const top_cards = [
     number: "123.40",
     footer_icons: <FaRegBookmark />,
     footer_text: "All erp users",
-    bg1: "#84AEC2",
-    bg2: "#6D53DC",
+    bg1: "#ffffff",
+    bg2: "#ffffff",
   },
   {
     icons: <FaMoneyBillTrendUp />,
@@ -37,8 +37,8 @@ const top_cards = [
     number: "123.40",
     footer_icons: <FaRegBookmark />,
     footer_text: "All erp users",
-    bg1: "#04616E",
-    bg2: "#B7D7C9",
+    bg1: "#9A84D9",
+    bg2: "#A43BAB",
   },
   {
     icons: <IoPieChartSharp />,
@@ -46,8 +46,8 @@ const top_cards = [
     number: "123.40",
     footer_icons: <FaRegBookmark />,
     footer_text: "All erp users",
-    bg1: "#DB8282",
-    bg2: "#E54D24",
+    bg1: "#ffffff",
+    bg2: "#ffffff",
   },
 ];
 
@@ -90,22 +90,22 @@ function HomePage() {
           {top_cards.map((cr, index) => (
             <div
               key={index}
-              className={`col-span-1 h-36 rounded-xl`}
+              className={`col-span-1 h-36 rounded-xl border-[1px] border-gray-300 shadow-md`}
               style={{
                 background: `linear-gradient(to right, ${cr.bg1}, ${cr.bg2})`,
               }}
             >
               <div className="flex border-b-2">
-                <div className="flex justify-center items-center text-white text-3xl bg-gray-300 h-14 w-14 ml-4 mt-4 bg-opacity-60 rounded-md">
+                <div className="flex justify-center items-center text-3xl bg-gray-300 h-14 w-14 ml-4 mt-4 bg-opacity-60 rounded-sm">
                   <div>{cr.icons}</div>
                 </div>
-                <div className="text-white m-4">
+                <div className="m-4">
                   <p>{cr.content}</p>
                   <h3 className="text-xl font-bold">{cr.number}</h3>
                 </div>
               </div>
               {/* Footer */}
-              <div className="flex justify-center items-center gap-3 mt-4 text-white">
+              <div className="flex justify-center items-center gap-3 mt-4">
                 <div className="flex items-center gap-3">
                   <span>{cr.footer_icons}</span>
                   <span>{cr.footer_text}</span>
